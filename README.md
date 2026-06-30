@@ -4,7 +4,7 @@
 
 `prototype-to-backend` is an AI Skill for converting product prototypes and requirement materials into backend development artifacts.
 
-It is designed for backend engineers and coding agents such as Codex and Claude Code. The skill focuses on business meaning, domain modeling, database design, REST API design, workflows, state machines, permissions, development planning, and open questions. It does not generate frontend code by default.
+It is designed for backend engineers using Codex. The skill focuses on business meaning, domain modeling, database design, REST API design, workflows, state machines, permissions, development planning, open questions, and design review. It does not generate frontend code by default.
 
 ## What This Skill Does
 
@@ -39,17 +39,17 @@ It is designed for backend engineers and coding agents such as Codex and Claude 
 ## Installation
 
 ```bash
-npx skills@latest add https://github.com/<owner>/prototype-to-backend --skill prototype-to-backend
+npx skills@latest add https://github.com/<owner>/prototype-to-backend --skill prototype-to-backend -g -a codex -y
 ```
 
-Replace `<owner>` with the GitHub account or organization that hosts this repository.
+Replace `<owner>` with the GitHub account or organization that hosts this repository. The `-a codex` option installs the skill only for Codex, avoiding unrelated agent targets.
 
 ## Updating
 
 When this repository publishes a new version, users who installed it with the Skills CLI can update their local copy with:
 
 ```bash
-npx skills@latest update prototype-to-backend
+npx skills@latest update -g prototype-to-backend
 ```
 
 Useful related commands:
@@ -61,12 +61,11 @@ npx skills@latest list
 # Check for available updates
 npx skills@latest check
 
-# Update all installed skills
-npx skills@latest update
+# Update this skill for Codex only if update fails because unrelated agents were selected earlier
+npx skills@latest add https://github.com/<owner>/prototype-to-backend --skill prototype-to-backend -g -a codex -y
 
-# Update only global or project-scoped skills
+# Update all global skills
 npx skills@latest update -g
-npx skills@latest update -p
 ```
 
 Codex usually detects skill changes automatically. If the updated skill does not appear, restart Codex.

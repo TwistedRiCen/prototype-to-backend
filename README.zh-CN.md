@@ -4,7 +4,7 @@
 
 `prototype-to-backend` 是一个用于将产品原型和需求资料转换为后端开发设计产物的 AI Skill。
 
-它主要面向后端开发人员以及 Codex、Claude Code 等编程 Agent。这个 Skill 的重点不是生成前端页面，而是从 HTML 原型、Axure 原型包、在线原型、PRD 或截图中识别业务含义，并输出后端开发可以直接参考的系统分析、领域模型、数据库设计、接口设计、审批流、状态机、权限模型、开发任务拆分和待确认问题。
+它主要面向使用 Codex 的后端开发人员。这个 Skill 的重点不是生成前端页面，而是从 HTML 原型、Axure 原型包、在线原型、PRD 或截图中识别业务含义，并输出后端开发可以直接参考的系统分析、领域模型、数据库设计、接口设计、审批流、状态机、权限模型、开发任务拆分、待确认问题和设计评审。
 
 ## 这个 Skill 能做什么
 
@@ -39,17 +39,17 @@
 ## 安装命令
 
 ```bash
-npx skills@latest add https://github.com/<owner>/prototype-to-backend --skill prototype-to-backend
+npx skills@latest add https://github.com/<owner>/prototype-to-backend --skill prototype-to-backend -g -a codex -y
 ```
 
-请将 `<owner>` 替换为托管该仓库的 GitHub 用户或组织名称。
+请将 `<owner>` 替换为托管该仓库的 GitHub 用户或组织名称。`-a codex` 表示只安装给 Codex，避免选择一堆不需要的 Agent。
 
 ## 更新方式
 
 当该仓库发布新版本后，使用 Skills CLI 安装的用户可以通过下面的命令更新本地已安装的 Skill：
 
 ```bash
-npx skills@latest update prototype-to-backend
+npx skills@latest update -g prototype-to-backend
 ```
 
 常用相关命令：
@@ -61,12 +61,11 @@ npx skills@latest list
 # 检查是否有可用更新
 npx skills@latest check
 
-# 更新所有已安装的 skills
-npx skills@latest update
+# 如果之前误选了很多 Agent 导致更新失败，可以只重新安装到 Codex
+npx skills@latest add https://github.com/<owner>/prototype-to-backend --skill prototype-to-backend -g -a codex -y
 
-# 只更新全局或项目级安装的 skills
+# 更新所有全局 skills
 npx skills@latest update -g
-npx skills@latest update -p
 ```
 
 Codex 通常会自动检测 Skill 变更。如果更新后没有出现新版本，可以重启 Codex。
