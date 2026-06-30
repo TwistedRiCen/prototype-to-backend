@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prototype to Backend"
+  short_description: "Turn product prototypes and PRDs into backend design artifacts."
+  default_prompt: "Analyze this prototype or PRD from a backend implementation perspective and generate system overview, domain model, database design, APIs, workflows, permissions, development plan, and open questions."
