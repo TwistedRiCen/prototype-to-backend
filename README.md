@@ -1,5 +1,7 @@
 # prototype-to-backend
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 `prototype-to-backend` is an AI Skill for converting product prototypes and requirement materials into backend development artifacts.
 
 It is designed for backend engineers and coding agents such as Codex and Claude Code. The skill focuses on business meaning, domain modeling, database design, REST API design, workflows, state machines, permissions, development planning, and open questions. It does not generate frontend code by default.
@@ -40,6 +42,33 @@ npx skills@latest add https://github.com/<owner>/prototype-to-backend --skill pr
 
 Replace `<owner>` with the GitHub account or organization that hosts this repository.
 
+## Updating
+
+When this repository publishes a new version, users who installed it with the Skills CLI can update their local copy with:
+
+```bash
+npx skills@latest update prototype-to-backend
+```
+
+Useful related commands:
+
+```bash
+# Check installed skills
+npx skills@latest list
+
+# Check for available updates
+npx skills@latest check
+
+# Update all installed skills
+npx skills@latest update
+
+# Update only global or project-scoped skills
+npx skills@latest update -g
+npx skills@latest update -p
+```
+
+Codex usually detects skill changes automatically. If the updated skill does not appear, restart Codex.
+
 ## Usage Examples
 
 ```text
@@ -67,27 +96,28 @@ The prototype URL is https://example.com/prototype. Inspect the sitemap, pages, 
 
 ```text
 prototype-to-backend/
-├── README.md
-├── LICENSE
-└── skills/
-    └── prototype-to-backend/
-        ├── SKILL.md
-        ├── agents/
-        │   └── openai.yaml
-        ├── templates/
-        │   ├── 01-system-overview-template.md
-        │   ├── 02-domain-model-template.md
-        │   ├── 03-database-design-template.md
-        │   ├── 04-api-design-template.md
-        │   ├── 05-state-machine-template.md
-        │   ├── 06-workflow-template.md
-        │   ├── 07-permission-model-template.md
-        │   ├── 08-development-plan-template.md
-        │   └── 09-open-questions-template.md
-        └── examples/
-            ├── axure-html-package-example.md
-            ├── oa-approval-example.md
-            └── procurement-system-example.md
+|-- README.md
+|-- README.zh-CN.md
+|-- LICENSE
+`-- skills/
+    `-- prototype-to-backend/
+        |-- SKILL.md
+        |-- agents/
+        |   `-- openai.yaml
+        |-- templates/
+        |   |-- 01-system-overview-template.md
+        |   |-- 02-domain-model-template.md
+        |   |-- 03-database-design-template.md
+        |   |-- 04-api-design-template.md
+        |   |-- 05-state-machine-template.md
+        |   |-- 06-workflow-template.md
+        |   |-- 07-permission-model-template.md
+        |   |-- 08-development-plan-template.md
+        |   `-- 09-open-questions-template.md
+        `-- examples/
+            |-- axure-html-package-example.md
+            |-- oa-approval-example.md
+            `-- procurement-system-example.md
 ```
 
 ## Limitations
