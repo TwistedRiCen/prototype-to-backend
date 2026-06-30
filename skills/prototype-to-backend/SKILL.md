@@ -23,6 +23,7 @@ For Axure HTML packages, inspect the page tree, sitemap files, page titles, note
 ## Working Rules
 
 - Preserve Chinese business terms when analyzing Chinese enterprise systems, and add English technical names beside them, for example `采购申请 (PurchaseRequest)`.
+- When the target team works primarily in Chinese, generate artifacts with Chinese-first bilingual headings and table columns, for example `系统概览 / System Overview` and `字段 / Field`.
 - Separate confirmed facts, assumptions, and open questions. Never turn ambiguous prototype behavior into a definite rule.
 - Put every uncertain business rule, missing field, missing permission, missing status, unclear workflow branch, or integration dependency into Open Questions.
 - Prefer Spring Boot, REST, and SQL database friendly output when no stack is specified, but keep designs framework-agnostic unless the user names a stack.
@@ -112,7 +113,7 @@ Prioritize these signals:
 
 ## Template Usage
 
-Use the templates under `templates/` as the default structure. Keep evidence notes concise and practical. If a section cannot be completed from the prototype, write `Not confirmed` and add the item to `09-open-questions.md`. After the first nine artifacts are drafted, use `10-design-review-template.md` to challenge and complete the design.
+Use the templates under `templates/` as the default structure. Templates are Chinese-first bilingual so Chinese enterprise teams can review them directly while agents still see stable English technical labels. Keep evidence notes concise and practical. If a section cannot be completed from the prototype, write `未确认 / Not confirmed` and add the item to `09-open-questions.md`. After the first nine artifacts are drafted, use `10-design-review-template.md` to challenge and complete the design.
 
 ## Quality Bar
 

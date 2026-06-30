@@ -11,7 +11,8 @@ It is designed for backend engineers using Codex. The skill focuses on business 
 - Analyzes Axure HTML prototype packages, online prototype URLs, PRDs, and screenshots.
 - Extracts user roles, module trees, menu trees, page inventories, form fields, search conditions, table columns, buttons, and backend operations.
 - Produces backend-ready artifacts for system overview, domain model, database schema, API design, state machine, workflow, permissions, delivery plan, and product confirmation questions.
-- Preserves Chinese business terms while providing English technical names for implementation.
+- Uses Chinese-first bilingual templates for Chinese teams, while preserving English technical names for implementation.
+- Preserves Chinese business terms and provides English technical names for entities, APIs, permissions, statuses, and tables.
 - Separates confirmed facts, assumptions, and unresolved questions.
 - Includes a built-in grill-me style review phase. It first generates backend artifacts, then challenges them to find missing APIs, weak data models, incomplete workflows, permission gaps, and ambiguous business rules.
 
@@ -24,6 +25,8 @@ It is designed for backend engineers using Codex. The skill focuses on business 
 - Screenshots as a fallback when richer artifacts are unavailable.
 
 ## Generated Outputs
+
+Templates use Chinese-first bilingual headings and table columns, such as `系统概览 / System Overview` and `字段 / Field`.
 
 - `01-system-overview.md`
 - `02-domain-model.md`

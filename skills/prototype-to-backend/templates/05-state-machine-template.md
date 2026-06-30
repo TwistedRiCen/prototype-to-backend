@@ -1,54 +1,54 @@
-# 05 State Machine
+# 05 状态机 / State Machine
 
-## State Owner
+## 状态归属 / State Owner
 
-- Entity:
-- Chinese status field:
-- Technical status field:
-- Source pages:
+- 实体 / Entity:
+- 中文状态字段 / Chinese status field:
+- 技术状态字段 / Technical status field:
+- 来源页面 / Source pages:
 
-## Status Values
+## 状态值 / Status Values
 
-| Status code | Chinese label | Meaning | Terminal | Evidence | Confidence |
+| 状态编码 / Status Code | 中文标签 / Chinese Label | 含义 / Meaning | 终态 / Terminal | 证据 / Evidence | 置信度 / Confidence |
 | --- | --- | --- | --- | --- | --- |
-| DRAFT | 草稿 | Editable before submission | No | TBD | Confirmed / Assumed |
+| DRAFT | 草稿 | 提交前可编辑 / Editable before submission | No | 待填写 | Confirmed / Assumed |
 
-## Actions
+## 动作 / Actions
 
-| Action | Chinese label | Actor | Preconditions | Permission code | Source button |
+| 动作 / Action | 中文标签 / Chinese Label | 操作人 / Actor | 前置条件 / Preconditions | 权限编码 / Permission Code | 来源按钮 / Source Button |
 | --- | --- | --- | --- | --- | --- |
-| submit | 提交 | TBD | TBD | TBD | TBD |
+| submit | 提交 | 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Transitions
+## 状态流转 / Transitions
 
-| From | Action | To | Actor | Guard rule | Side effects | Open question |
+| 原状态 / From | 动作 / Action | 目标状态 / To | 操作人 / Actor | 守卫规则 / Guard Rule | 副作用 / Side Effects | 待确认 / Open Question |
 | --- | --- | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Terminal States
+## 终态 / Terminal States
 
-| Status | Meaning | Can reopen? | Notes |
+| 状态 / Status | 含义 / Meaning | 是否可重新打开 / Can Reopen | 备注 / Notes |
 | --- | --- | --- | --- |
-| TBD | TBD | Yes / No / Unknown | TBD |
+| 待填写 | 待填写 | Yes / No / Unknown | 待填写 |
 
-## Rollback / Revoke / Reject Rules
+## 回退、撤回、驳回规则 / Rollback, Revoke, Reject Rules
 
-| Rule type | Allowed from | Target status | Actor | Constraints | Evidence |
+| 规则类型 / Rule Type | 允许来源状态 / Allowed From | 目标状态 / Target Status | 操作人 / Actor | 限制 / Constraints | 证据 / Evidence |
 | --- | --- | --- | --- | --- | --- |
-| Revoke | TBD | TBD | TBD | TBD | TBD |
+| Revoke | 待填写 | 待填写 | 待填写 | 待填写 | 待填写 |
 
-## State Validation Checklist
+## 状态校验清单 / State Validation Checklist
 
-- Is every button mapped to an allowed status?
-- Are list filters consistent with status values?
-- Are rejected and revoked states distinct?
-- Are terminal states protected from updates?
-- Are audit records required for every transition?
+- 每个按钮是否都映射到了允许状态？
+- 列表筛选项是否覆盖所有状态值？
+- 驳回和退回是否语义不同？
+- 终态是否禁止业务更新？
+- 每次流转是否需要审计记录？
 
-## Assumptions
+## 假设 / Assumptions
 
-- TBD
+- 待填写
 
-## Open Questions
+## 待确认问题 / Open Questions
 
-- TBD
+- 待填写

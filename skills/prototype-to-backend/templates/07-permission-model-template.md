@@ -1,50 +1,50 @@
-# 07 Permission Model
+# 07 权限模型 / Permission Model
 
-## Permission Naming Convention
+## 权限编码规范 / Permission Naming Convention
 
-- Format: `module:resource:action`
-- Example: `procurement:request:approve`
+- 格式 / Format: `module:resource:action`
+- 示例 / Example: `procurement:request:approve`
 
-## Role Suggestions
+## 角色建议 / Role Suggestions
 
-| Role | Chinese term | Description | Default permissions | Data scope |
+| 角色 / Role | 中文名 / Chinese Term | 说明 / Description | 默认权限 / Default Permissions | 数据范围 / Data Scope |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | Own / Department / All / Custom |
+| 待填写 | 待填写 | 待填写 | 待填写 | Own / Department / All / Custom |
 
-## Menu Permissions
+## 菜单权限 / Menu Permissions
 
-| Menu path | Permission code | Role suggestions | Evidence |
+| 菜单路径 / Menu Path | 权限编码 / Permission Code | 建议角色 / Role Suggestions | 证据 / Evidence |
 | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Button / Action Permissions
+## 按钮/动作权限 / Button and Action Permissions
 
-| Page | Button/action | Backend operation | Permission code | Status constraint |
+| 页面 / Page | 按钮/动作 / Button or Action | 后端操作 / Backend Operation | 权限编码 / Permission Code | 状态约束 / Status Constraint |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Data Permissions
+## 数据权限 / Data Permissions
 
-| Entity | Scope rule | Applies to APIs | Source field | Open question |
+| 实体 / Entity | 范围规则 / Scope Rule | 适用接口 / Applies To APIs | 来源字段 / Source Field | 待确认 / Open Question |
 | --- | --- | --- | --- | --- |
-| TBD | Own / Department / Tenant / Custom | TBD | TBD | Yes / No |
+| 待填写 | Own / Department / Tenant / Custom | 待填写 | 待填写 | Yes / No |
 
-## Field-Level Permissions
+## 字段级权限 / Field-Level Permissions
 
-| Entity | Field | Rule | Applies to | Notes |
+| 实体 / Entity | 字段 / Field | 规则 / Rule | 适用对象 / Applies To | 备注 / Notes |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | Visible / Editable / Masked | Role / Status / Owner | TBD |
+| 待填写 | 待填写 | Visible / Editable / Masked | Role / Status / Owner | 待填写 |
 
-## Permission Matrix
+## 权限矩阵 / Permission Matrix
 
-| Permission | Admin | Manager | Operator | Viewer | Notes |
+| 权限 / Permission | Admin | Manager | Operator | Viewer | 备注 / Notes |
 | --- | --- | --- | --- | --- | --- |
-| TBD | Y | Y/N | Y/N | Y/N | TBD |
+| 待填写 | Y | Y/N | Y/N | Y/N | 待填写 |
 
-## Assumptions
+## 假设 / Assumptions
 
-- TBD
+- 待填写
 
-## Open Questions
+## 待确认问题 / Open Questions
 
-- TBD
+- 待填写

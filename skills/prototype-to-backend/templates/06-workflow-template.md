@@ -1,60 +1,60 @@
-# 06 Workflow
+# 06 流程与审批 / Workflow
 
-## Workflow Scope
+## 流程范围 / Workflow Scope
 
-- Workflow name:
-- Business object:
-- Trigger:
-- Completion condition:
-- Cancellation condition:
+- 流程名称 / Workflow name:
+- 业务对象 / Business object:
+- 触发条件 / Trigger:
+- 完成条件 / Completion condition:
+- 取消条件 / Cancellation condition:
 
-## Approval Nodes
+## 审批节点 / Approval Nodes
 
-| Node | Chinese name | Participant role | Entry condition | Actions | SLA | Evidence |
+| 节点 / Node | 中文名 / Chinese Name | 参与角色 / Participant Role | 进入条件 / Entry Condition | 动作 / Actions | SLA | 证据 / Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | Approve / Reject / Return / Transfer | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 | Approve / Reject / Return / Transfer | 待填写 | 待填写 |
 
-## Participant Rules
+## 参与人规则 / Participant Rules
 
-| Rule | Description | Data source | Open question |
+| 规则 / Rule | 说明 / Description | 数据来源 / Data Source | 待确认 / Open Question |
 | --- | --- | --- | --- |
-| TBD | TBD | User / Department / Role / Form field | Yes / No |
+| 待填写 | 待填写 | User / Department / Role / Form field | Yes / No |
 
-## Approval Actions
+## 审批动作 / Approval Actions
 
-| Action | From node | Result | Status change | Audit content | Notification |
+| 动作 / Action | 来源节点 / From Node | 结果 / Result | 状态变化 / Status Change | 审计内容 / Audit Content | 通知 / Notification |
 | --- | --- | --- | --- | --- | --- |
-| Approve | TBD | Move next / Complete | TBD | TBD | TBD |
+| Approve | 待填写 | Move next / Complete | 待填写 | 待填写 | 待填写 |
 
-## Return / Reject / Revoke / Transfer Rules
+## 退回、驳回、撤回、转交规则 / Return, Reject, Revoke, Transfer Rules
 
-| Rule | Allowed actor | Allowed node/status | Target node/status | Constraints |
+| 规则 / Rule | 允许操作人 / Actor | 允许节点/状态 / Allowed Node or Status | 目标节点/状态 / Target Node or Status | 限制 / Constraints |
 | --- | --- | --- | --- | --- |
-| Return | TBD | TBD | TBD | TBD |
+| Return | 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Workflow Variables
+## 流程变量 / Workflow Variables
 
-| Variable | Type | Source | Used for | Notes |
+| 变量 / Variable | 类型 / Type | 来源 / Source | 用途 / Used For | 备注 / Notes |
 | --- | --- | --- | --- | --- |
-| amount | DECIMAL | Form field | Conditional approval | TBD |
+| amount | DECIMAL | Form field | Conditional approval | 待填写 |
 
-## Notification Points
+## 通知点 / Notification Points
 
-| Event | Receiver | Channel | Template | Required |
+| 事件 / Event | 接收人 / Receiver | 渠道 / Channel | 模板 / Template | 是否必需 / Required |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | In-app / Email / SMS / IM | TBD | Yes / No |
+| 待填写 | 待填写 | In-app / Email / SMS / IM | 待填写 | Yes / No |
 
-## Audit And History
+## 审批历史与审计 / Audit And History
 
-- Approval history fields:
-- Comment requirements:
-- Attachment requirements:
-- Visibility rules:
+- 审批历史字段 / Approval history fields:
+- 意见要求 / Comment requirements:
+- 附件要求 / Attachment requirements:
+- 可见性规则 / Visibility rules:
 
-## Assumptions
+## 假设 / Assumptions
 
-- TBD
+- 待填写
 
-## Open Questions
+## 待确认问题 / Open Questions
 
-- TBD
+- 待填写

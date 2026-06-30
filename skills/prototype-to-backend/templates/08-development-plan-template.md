@@ -1,56 +1,56 @@
-# 08 Development Plan
+# 08 开发计划 / Development Plan
 
-## Milestones
+## 里程碑 / Milestones
 
-| Milestone | Scope | Deliverables | Dependencies | Risk |
+| 里程碑 / Milestone | 范围 / Scope | 交付物 / Deliverables | 依赖 / Dependencies | 风险 / Risk |
 | --- | --- | --- | --- | --- |
-| M1 | TBD | TBD | TBD | Low / Medium / High |
+| M1 | 待填写 | 待填写 | 待填写 | Low / Medium / High |
 
-## Module Tasks
+## 模块任务 / Module Tasks
 
-| Task ID | Module | Task | Output | Priority | Risk | Notes |
+| 任务ID / Task ID | 模块 / Module | 任务 / Task | 输出 / Output | 优先级 / Priority | 风险 / Risk | 备注 / Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | P0 / P1 / P2 | Low / Medium / High | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 | P0 / P1 / P2 | Low / Medium / High | 待填写 |
 
-## Entity / Table Tasks
+## 实体/表任务 / Entity and Table Tasks
 
-| Task | Tables/entities | Details | Owner suggestion | Risk |
+| 任务 / Task | 表/实体 / Tables or Entities | 细节 / Details | 建议负责人 / Owner Suggestion | 风险 / Risk |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | Backend | TBD |
+| 待填写 | 待填写 | 待填写 | Backend | 待填写 |
 
-## API Tasks
+## 接口任务 / API Tasks
 
-| API group | Endpoints | DTO/VO | Tests | Priority |
+| 接口组 / API Group | 端点 / Endpoints | DTO/VO | 测试 / Tests | 优先级 / Priority |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | Unit / Integration | TBD |
+| 待填写 | 待填写 | 待填写 | Unit / Integration | 待填写 |
 
-## Workflow Tasks
+## 流程任务 / Workflow Tasks
 
-| Workflow | Engine / implementation | Tasks | Test focus | Risk |
+| 流程 / Workflow | 引擎/实现方式 / Engine or Implementation | 任务 / Tasks | 测试重点 / Test Focus | 风险 / Risk |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | Status transition / approval branch | TBD |
+| 待填写 | 待填写 | 待填写 | Status transition / approval branch | 待填写 |
 
-## Permission Tasks
+## 权限任务 / Permission Tasks
 
-| Area | Tasks | Test focus | Notes |
+| 范围 / Area | 任务 / Tasks | 测试重点 / Test Focus | 备注 / Notes |
 | --- | --- | --- | --- |
-| TBD | TBD | Menu/action/data permission | TBD |
+| 待填写 | 待填写 | Menu/action/data permission | 待填写 |
 
-## Test Tasks
+## 测试任务 / Test Tasks
 
-| Test type | Scope | Key cases | Required data |
+| 测试类型 / Test Type | 范围 / Scope | 关键用例 / Key Cases | 所需数据 / Required Data |
 | --- | --- | --- | --- |
-| Unit | TBD | TBD | TBD |
-| Integration | TBD | TBD | TBD |
-| API contract | TBD | TBD | TBD |
-| Workflow/state | TBD | TBD | TBD |
+| Unit | 待填写 | 待填写 | 待填写 |
+| Integration | 待填写 | 待填写 | 待填写 |
+| API contract | 待填写 | 待填写 | 待填写 |
+| Workflow/state | 待填写 | 待填写 | 待填写 |
 
-## Risks And Mitigations
+## 风险与缓解 / Risks And Mitigations
 
-| Risk | Impact | Mitigation | Owner |
+| 风险 / Risk | 影响 / Impact | 缓解方案 / Mitigation | 负责人 / Owner |
 | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Open Questions Blocking Development
+## 阻塞开发的待确认问题 / Open Questions Blocking Development
 
-- TBD
+- 待填写

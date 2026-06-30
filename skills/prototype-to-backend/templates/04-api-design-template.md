@@ -1,68 +1,68 @@
-# 04 API Design
+# 04 接口设计 / API Design
 
-## API Design Principles
+## 接口设计原则 / API Design Principles
 
-- Prefer RESTful resource paths.
-- Keep API names framework-agnostic unless a stack is specified.
-- Include permission, validation, transaction, and idempotency notes for every command API.
+- 优先使用 RESTful resource paths.
+- 未指定技术栈时保持框架无关 / Keep framework-agnostic unless a stack is specified.
+- 每个命令类接口都要说明权限、校验、事务和幂等要求。
 
-## API List
+## 接口清单 / API List
 
-| API | Method | Path | Purpose | Permission code | Transaction | Idempotency |
+| 接口 / API | 方法 / Method | 路径 / Path | 用途 / Purpose | 权限编码 / Permission Code | 事务 / Transaction | 幂等 / Idempotency |
 | --- | --- | --- | --- | --- | --- | --- |
-| TBD | GET / POST / PUT / PATCH / DELETE | TBD | TBD | TBD | Yes / No | Required / Not required |
+| 待填写 | GET / POST / PUT / PATCH / DELETE | 待填写 | 待填写 | 待填写 | Yes / No | Required / Not required |
 
-## API Detail: TBD
+## 接口详情 / API Detail: 待填写
 
 ### Endpoint
 
-- Method:
-- Path:
-- Purpose:
-- Source page/action:
-- Permission code:
+- 方法 / Method:
+- 路径 / Path:
+- 用途 / Purpose:
+- 来源页面/动作 / Source page or action:
+- 权限编码 / Permission code:
 
-### Request DTO
+### 请求 DTO / Request DTO
 
-| Field | Type | Required | Validation | Description |
+| 字段 / Field | 类型 / Type | 必填 / Required | 校验规则 / Validation | 说明 / Description |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | Yes / No | TBD | TBD |
+| 待填写 | 待填写 | Yes / No | 待填写 | 待填写 |
 
-### Response VO
+### 响应 VO / Response VO
 
-| Field | Type | Description | Notes |
+| 字段 / Field | 类型 / Type | 说明 / Description | 备注 / Notes |
 | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 |
 
-### Business Rules
+### 业务规则 / Business Rules
 
-- Confirmed:
-- Assumed:
+- 已确认 / Confirmed:
+- 假设 / Assumed:
 
-### Validation Rules
+### 校验规则 / Validation Rules
 
-| Rule | Error case | Suggested error code | Evidence |
+| 规则 / Rule | 错误场景 / Error Case | 建议错误码 / Suggested Error Code | 证据 / Evidence |
 | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 |
 
-### Transaction Boundary
+### 事务边界 / Transaction Boundary
 
-- Tables written:
-- External calls:
-- Rollback behavior:
+- 写入表 / Tables written:
+- 外部调用 / External calls:
+- 回滚行为 / Rollback behavior:
 
-### Exception Cases
+### 异常场景 / Exception Cases
 
-| Case | Expected behavior | Error code | Open question? |
+| 场景 / Case | 期望行为 / Expected Behavior | 错误码 / Error Code | 是否待确认 / Open Question |
 | --- | --- | --- | --- |
-| TBD | TBD | TBD | Yes / No |
+| 待填写 | 待填写 | 待填写 | Yes / No |
 
-## Batch / Import / Export APIs
+## 批量、导入、导出接口 / Batch, Import, Export APIs
 
-| API | File format | Async? | Template source | Error report |
+| 接口 / API | 文件格式 / File Format | 异步 / Async | 模板来源 / Template Source | 错误报告 / Error Report |
 | --- | --- | --- | --- | --- |
-| TBD | XLSX / CSV / PDF / Other | Yes / No | TBD | TBD |
+| 待填写 | XLSX / CSV / PDF / Other | Yes / No | 待填写 | 待填写 |
 
-## Open Questions
+## 待确认问题 / Open Questions
 
-- TBD
+- 待填写

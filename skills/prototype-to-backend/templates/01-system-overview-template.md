@@ -1,53 +1,55 @@
-# 01 System Overview
+# 01 系统概览 / System Overview
 
-## Source Materials
+> 面向中文业务评审，保留英文技术名便于后端实现。
 
-| Source | Type | Scope | Notes |
+## 资料来源 / Source Materials
+
+| 资料 / Source | 类型 / Type | 范围 / Scope | 备注 / Notes |
 | --- | --- | --- | --- |
-| TBD | Axure HTML / URL / PRD / Screenshot | TBD | TBD |
+| 待填写 | Axure HTML / URL / PRD / Screenshot | 待填写 | 待填写 |
 
-## System Purpose
+## 系统目标 / System Purpose
 
-- Confirmed purpose:
-- Business problems addressed:
-- Out of scope:
+- 已确认目标 / Confirmed purpose:
+- 解决的业务问题 / Business problems addressed:
+- 不在范围内 / Out of scope:
 
-## User Roles
+## 用户角色 / User Roles
 
-| Role | Chinese term | Responsibilities | Evidence | Confidence |
+| 角色中文名 / Chinese Role | 技术名 / Technical Name | 职责 / Responsibilities | 证据 / Evidence | 置信度 / Confidence |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | Confirmed / Assumed |
+| 待填写 | TBD | 待填写 | 待填写 | Confirmed / Assumed |
 
-## Module Tree
+## 模块树 / Module Tree
 
 ```text
-System
-└── Module
-    └── Capability
+系统 / System
+`-- 模块 / Module
+    `-- 能力 / Capability
 ```
 
-## Menu Tree
+## 菜单树 / Menu Tree
 
-| Menu path | Page | Permission code | Notes |
+| 菜单路径 / Menu Path | 页面 / Page | 权限编码 / Permission Code | 备注 / Notes |
 | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Page Inventory
+## 页面清单 / Page Inventory
 
-| Page ID | Page title | Module | Main purpose | Key actions | Evidence |
+| 页面ID / Page ID | 页面标题 / Page Title | 模块 / Module | 主要用途 / Purpose | 关键动作 / Key Actions | 证据 / Evidence |
 | --- | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Business Capability Map
+## 业务能力地图 / Business Capability Map
 
-| Capability | Triggering pages | Backend operations | Related entities | Notes |
+| 业务能力 / Capability | 相关页面 / Pages | 后端操作 / Backend Operations | 相关实体 / Entities | 备注 / Notes |
 | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | TBD |
+| 待填写 | 待填写 | 待填写 | 待填写 | 待填写 |
 
-## Assumptions
+## 假设 / Assumptions
 
-- TBD
+- 待填写
 
-## Open Questions
+## 待确认问题 / Open Questions
 
-- TBD
+- 待填写
