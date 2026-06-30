@@ -13,6 +13,7 @@ It is designed for backend engineers and coding agents such as Codex and Claude 
 - Produces backend-ready artifacts for system overview, domain model, database schema, API design, state machine, workflow, permissions, delivery plan, and product confirmation questions.
 - Preserves Chinese business terms while providing English technical names for implementation.
 - Separates confirmed facts, assumptions, and unresolved questions.
+- Includes a built-in grill-me style review phase. It first generates backend artifacts, then challenges them to find missing APIs, weak data models, incomplete workflows, permission gaps, and ambiguous business rules.
 
 ## Supported Inputs
 
@@ -33,6 +34,7 @@ It is designed for backend engineers and coding agents such as Codex and Claude 
 - `07-permission-model.md`
 - `08-development-plan.md`
 - `09-open-questions.md`
+- `10-design-review.md`
 
 ## Installation
 
@@ -87,10 +89,11 @@ The prototype URL is https://example.com/prototype. Inspect the sitemap, pages, 
 
 1. Provide the richest available source material, preferably an Axure HTML package or prototype URL.
 2. Ask the agent to inventory pages, menus, forms, lists, buttons, statuses, and interactions first.
-3. Generate the nine backend artifacts.
-4. Review `09-open-questions.md` with product owners and business stakeholders.
-5. Update the artifacts after answers are confirmed.
-6. Use `08-development-plan.md` to split backend implementation tasks.
+3. Generate the first nine backend artifacts.
+4. Run the built-in grill-me style review phase and generate `10-design-review.md`.
+5. Review `09-open-questions.md` and `10-design-review.md` with product owners, business stakeholders, and backend engineers.
+6. Update the artifacts after answers and design fixes are confirmed.
+7. Use `08-development-plan.md` to split backend implementation tasks.
 
 ## Repository Structure
 
@@ -113,11 +116,13 @@ prototype-to-backend/
         |   |-- 06-workflow-template.md
         |   |-- 07-permission-model-template.md
         |   |-- 08-development-plan-template.md
-        |   `-- 09-open-questions-template.md
+        |   |-- 09-open-questions-template.md
+        |   `-- 10-design-review-template.md
         `-- examples/
             |-- axure-html-package-example.md
             |-- oa-approval-example.md
-            `-- procurement-system-example.md
+            |-- procurement-system-example.md
+            `-- design-review-example.md
 ```
 
 ## Limitations
@@ -126,6 +131,7 @@ prototype-to-backend/
 - Ambiguous rules must be documented as assumptions or open questions.
 - Screenshot-only analysis is less reliable than HTML prototype or PRD analysis.
 - Generated database and API designs are implementation-ready drafts, not final business approval.
+- The design review phase finds risks from the available artifacts; unresolved product or business rules still require stakeholder confirmation.
 
 ## License
 

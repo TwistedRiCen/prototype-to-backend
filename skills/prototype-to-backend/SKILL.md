@@ -1,13 +1,13 @@
 ---
 name: prototype-to-backend
-description: Use when converting HTML product prototypes, Axure HTML packages, online prototype URLs, PRDs, screenshots, or enterprise business mockups into backend-ready analysis, database, API, workflow, permission, task breakdown, and open-question artifacts.
+description: Use when converting HTML product prototypes, Axure HTML packages, online prototype URLs, PRDs, screenshots, or enterprise business mockups into backend-ready analysis, database, API, workflow, permission, task breakdown, open-question, and design-review artifacts.
 ---
 
 # Prototype To Backend
 
 ## Overview
 
-Use this skill to turn product prototypes and requirement materials into backend implementation artifacts. Focus on business meaning, data, APIs, workflows, permissions, validation, and delivery planning. Do not generate frontend code unless the user explicitly asks for it.
+Use this skill to turn product prototypes and requirement materials into backend implementation artifacts. Focus on business meaning, data, APIs, workflows, permissions, validation, delivery planning, and backend design review. Do not generate frontend code unless the user explicitly asks for it.
 
 ## Input Priority
 
@@ -37,6 +37,38 @@ For Axure HTML packages, inspect the page tree, sitemap files, page titles, note
 3. Build artifacts from evidence: map screens and actions to domain model, tables, APIs, state machine, workflow, permissions, and tasks.
 4. Mark confidence: label each major rule as `Confirmed`, `Assumed`, or `Open Question`.
 5. Generate outputs using the templates in `templates/`. Omit sections only when they are irrelevant, not when they are merely unknown.
+6. Review phase: after generating backend artifacts, perform a grill-me style design review and output `10-design-review.md`.
+
+## Review Phase
+
+After generating backend artifacts, challenge the design as if preparing it for backend implementation review. Do not merely summarize the generated artifacts. Actively look for missing APIs, weak data models, incomplete workflow branches, status gaps, permission holes, ambiguous rules, and implementation risks.
+
+Review these areas:
+
+- API completeness.
+- Database model correctness.
+- Workflow closure.
+- State machine completeness.
+- Permission coverage.
+- Validation rules.
+- Transaction boundaries.
+- Idempotency.
+- Concurrency risks.
+- Audit logging.
+- Data permissions.
+- Import/export behavior.
+- Historical data versioning.
+- Integration dependencies.
+- Open questions quality.
+
+For every issue:
+
+- Explain why it matters to backend implementation, correctness, operations, or future maintenance.
+- Give a recommended fix, redesign, or confirmation path.
+- Assign a severity such as `Blocking`, `High`, `Medium`, or `Low`.
+- If the correct answer cannot be determined from the source materials, add it to Open Questions instead of writing a guess as fact.
+
+The review result must be actionable enough to guide backend rework or design completion.
 
 ## Required Output Set
 
@@ -51,6 +83,7 @@ Generate these files or sections unless the user asks for a narrower scope:
 - `07-permission-model.md`: menu, button, data permissions, roles, permission naming convention.
 - `08-development-plan.md`: milestones, module tasks, entity/table tasks, API tasks, workflow tasks, tests, risk, priority.
 - `09-open-questions.md`: unclear rules, missing fields/statuses/permissions/workflows, integrations, confirmation checklist.
+- `10-design-review.md`: grill-me style backend design review with issues, why they matter, recommendations, severity, product questions, and completion checklist.
 
 ## Extraction Checklist
 
@@ -79,7 +112,7 @@ Prioritize these signals:
 
 ## Template Usage
 
-Use the templates under `templates/` as the default structure. Keep evidence notes concise and practical. If a section cannot be completed from the prototype, write `Not confirmed` and add the item to `09-open-questions.md`.
+Use the templates under `templates/` as the default structure. Keep evidence notes concise and practical. If a section cannot be completed from the prototype, write `Not confirmed` and add the item to `09-open-questions.md`. After the first nine artifacts are drafted, use `10-design-review-template.md` to challenge and complete the design.
 
 ## Quality Bar
 
