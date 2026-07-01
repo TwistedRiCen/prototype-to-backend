@@ -73,6 +73,16 @@ npx skills@latest update -g
 
 Codex usually detects skill changes automatically. If the updated skill does not appear, restart Codex.
 
+## Uninstalling
+
+To remove the Codex global installation:
+
+```bash
+npx skills@latest remove prototype-to-backend -g -a codex -y
+```
+
+If you previously installed this skill for multiple agents, remove only the Codex copy with the command above, or replace `codex` with the agent name you want to remove.
+
 ## Usage Examples
 
 ```text

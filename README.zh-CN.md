@@ -73,6 +73,16 @@ npx skills@latest update -g
 
 Codex 通常会自动检测 Skill 变更。如果更新后没有出现新版本，可以重启 Codex。
 
+## 卸载命令
+
+如果需要移除 Codex 的全局安装版本，执行：
+
+```bash
+npx skills@latest remove prototype-to-backend -g -a codex -y
+```
+
+如果你之前把这个 Skill 安装给了多个 Agent，可以用上面的命令只移除 Codex 这一份；如果要移除其他 Agent，把 `codex` 替换成对应的 agent 名称。
+
 ## 使用示例
 
 ```text
